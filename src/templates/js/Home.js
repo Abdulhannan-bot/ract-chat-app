@@ -51,8 +51,8 @@ export default function Home() {
   } = useContext(AuthContext);
 
   useEffect(() => {
-    setChatSocket(new WebSocket(`ws://127.0.0.1:8000/ws/chat/chatroom/`));
-    setNotifySocket(new WebSocket(`ws://127.0.0.1:8000/ws/notify/chatroom/`));
+    setChatSocket(new WebSocket(`ws://64.227.176.7/ws/chat/chatroom/`));
+    setNotifySocket(new WebSocket(`ws://64.227.176.7/ws/notify/chatroom/`));
     contacts();
     chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
   }, []);
