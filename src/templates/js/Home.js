@@ -331,7 +331,9 @@ export default function Home() {
                                       ) : (
                                         <></>
                                       )}
-                                      {x.latest_message}
+                                      {x.latest_message?.length > 28
+                                        ? x.latest_message.slice(0, 28) + "..."
+                                        : x.latest_message}
                                     </p>
                                   </div>
                                 </div>
